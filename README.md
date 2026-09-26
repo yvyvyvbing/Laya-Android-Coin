@@ -164,7 +164,7 @@ Release 附件单文件上限 2 GB，是大模型分发的标准做法。维护�
 cd laya && tar -czf model-int8.tar.gz model-int8        # 约 386 MB
 
 # 使用者：下载并铺到 public/model/
-curl -L -o model.tar.gz https://github.com/<owner>/coin/releases/download/v1.0.0/model-int8.tar.gz
+curl -L -o model.tar.gz https://github.com/yvyvyvbing/Laya-Android-Coin/releases/download/v1.0.0/model-int8.tar.gz
 tar -xzf model.tar.gz && cp model-int8/encoder.onnx model-int8/head.onnx \
   model-int8/tokenizer.json model-int8/rl_agent_config.json laya-app/public/model/
 ```
