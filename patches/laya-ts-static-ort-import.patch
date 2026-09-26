@@ -1,0 +1,37 @@
+diff --git a/laya-ts/src/providers.ts b/laya-ts/src/providers.ts
+index d423ae8..ad033af 100644
+--- a/laya-ts/src/providers.ts
++++ b/laya-ts/src/providers.ts
+@@ -512,8 +512,9 @@ export async function createWebProvider(
+   modelUrl: string,
+   opts?: ProviderOptions,
+ ): Promise<SessionProvider> {
+-  const spec = "onnxruntime-" + "web";
+-  const ort: any = await import(/* @vite-ignore */ spec);
++  // Bundler-friendly static import (no @vite-ignore): Vite can resolve and
++  // package onnxruntime-web for the browser. Node users don't call this path.
++  const ort: any = await import("onnxruntime-web");
+   applyNumThreads(ort, opts?.numThreads);
+   const base = modelUrl.replace(/\/+$/, "");
+   const encUrl = `${base}/encoder.onnx`;
+@@ -536,15 +537,11 @@ export async function createWebProvider(
+     await expectDigest("head.onnx", headBuf, opts.expectedSha256);
+   }
+   let enc: any;
+-  try {
+-    enc = await ort.InferenceSession.create(new Uint8Array(encBuf), {
+-      executionProviders: ["webgpu", "wasm"],
+-    });
+-  } catch (e) {
+-    enc = await ort.InferenceSession.create(new Uint8Array(encBuf), {
+-      executionProviders: ["wasm"],
+-    });
+-  }
++  // 仅 WASM：WebGPU session 虽能创建，但运行时 SkipLayerNormalization
++  // kernel 报 "Beta must be 1D"（运行时错误，无法靠 catch 回退）。
++  enc = await ort.InferenceSession.create(new Uint8Array(encBuf), {
++    executionProviders: ["wasm"],
++  });
+   const head = await ort.InferenceSession.create(new Uint8Array(headBuf), {
+     executionProviders: ["wasm"],
+   });

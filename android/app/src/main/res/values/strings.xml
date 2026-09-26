@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Coin</string>
+    <string name="title_activity_main">Coin</string>
+    <string name="package_name">com.laya.decision</string>
+    <string name="custom_url_scheme">com.laya.decision</string>
+</resources>

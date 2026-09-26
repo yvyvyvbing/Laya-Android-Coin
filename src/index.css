@@ -1,0 +1,232 @@
+/* 主题：墨绿（默认）、暗夜蓝、石墨、暗紫、浅色、暖沙。由 <html data-theme="..."> 切换 */
+:root,
+:root[data-theme='ink'] {
+  /* 墨绿 */
+  --bg: #0f2019;
+  --surface: #163027;
+  --surface-2: #1c3c31;
+  --border: #2a5b4b;
+  --text-h: #eaf5f0;
+  --text: #9cc0b2;
+  --track-bg: #204238;
+  --accent: #3cae83;
+  --accent-ink: #05221a;
+  --accent-soft: rgba(60, 174, 131, 0.16);
+  --danger: #f68b81;
+  --danger-soft: rgba(246, 139, 129, 0.14);
+  --placeholder: #7ba294;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='navy'] {
+  /* 暗夜蓝 */
+  --bg: #0d1524;
+  --surface: #141f33;
+  --surface-2: #1b2942;
+  --border: #27395a;
+  --text-h: #e6edf8;
+  --text: #93a6c4;
+  --track-bg: #1e2c46;
+  --accent: #4f8df7;
+  --accent-ink: #04122a;
+  --accent-soft: rgba(79, 141, 247, 0.16);
+  --danger: #f58b8b;
+  --danger-soft: rgba(245, 139, 139, 0.14);
+  --placeholder: #7a8dab;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='graphite'] {
+  /* 石墨（中性深灰 + 金） */
+  --bg: #16181c;
+  --surface: #1e2126;
+  --surface-2: #262a31;
+  --border: #363b44;
+  --text-h: #e9ecf1;
+  --text: #9aa2ae;
+  --track-bg: #2b3038;
+  --accent: #c9a35b;
+  --accent-ink: #1c1608;
+  --accent-soft: rgba(201, 163, 91, 0.16);
+  --danger: #f58b8b;
+  --danger-soft: rgba(245, 139, 139, 0.14);
+  --placeholder: #7d8695;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='violet'] {
+  /* 暗紫 */
+  --bg: #151127;
+  --surface: #1e1834;
+  --surface-2: #271f42;
+  --border: #382c5c;
+  --text-h: #ece8f8;
+  --text: #a99fc4;
+  --track-bg: #2b2249;
+  --accent: #a78bfa;
+  --accent-ink: #1a1130;
+  --accent-soft: rgba(167, 139, 250, 0.16);
+  --danger: #f58b8b;
+  --danger-soft: rgba(245, 139, 139, 0.14);
+  --placeholder: #8d84a8;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='olive'] {
+  /* 橄榄（深色军绿） */
+  --bg: #161a0f;
+  --surface: #1f2416;
+  --surface-2: #292f1d;
+  --border: #3b4426;
+  --text-h: #eef2e2;
+  --text: #a5b08c;
+  --track-bg: #2c3319;
+  --accent: #a3c948;
+  --accent-ink: #141a06;
+  --accent-soft: rgba(163, 201, 72, 0.16);
+  --danger: #f58b8b;
+  --danger-soft: rgba(245, 139, 139, 0.14);
+  --placeholder: #838d6b;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='coffee'] {
+  /* 深棕（暖调深色） */
+  --bg: #1a1410;
+  --surface: #241b16;
+  --surface-2: #2e221b;
+  --border: #43332a;
+  --text-h: #f2e9e2;
+  --text: #b3a096;
+  --track-bg: #332720;
+  --accent: #d08c4a;
+  --accent-ink: #1c1108;
+  --accent-soft: rgba(208, 140, 74, 0.16);
+  --danger: #f58b8b;
+  --danger-soft: rgba(245, 139, 139, 0.14);
+  --placeholder: #8d7a6e;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='black'] {
+  /* 曜黑（纯黑，OLED 省电） */
+  --bg: #000000;
+  --surface: #0d0d0f;
+  --surface-2: #17181b;
+  --border: #2a2b30;
+  --text-h: #f5f6f8;
+  --text: #9a9ca6;
+  --track-bg: #1e1f24;
+  --accent: #4da3ff;
+  --accent-ink: #00152b;
+  --accent-soft: rgba(77, 163, 255, 0.16);
+  --danger: #f58b8b;
+  --danger-soft: rgba(245, 139, 139, 0.14);
+  --placeholder: #6d7078;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  /* 浅色 */
+  --bg: #f4f7f5;
+  --surface: #ffffff;
+  --surface-2: #eef4f1;
+  --border: #d8e5df;
+  --text-h: #10241d;
+  --text: #5c7a6e;
+  --track-bg: #e3ece8;
+  --accent: #1f8a63;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(31, 138, 99, 0.12);
+  --danger: #b4352c;
+  --danger-soft: rgba(180, 53, 44, 0.1);
+  --placeholder: #8aa79b;
+
+  color-scheme: light;
+}
+
+:root[data-theme='sand'] {
+  /* 暖沙（暖调浅色） */
+  --bg: #f7f3ec;
+  --surface: #ffffff;
+  --surface-2: #f0e9de;
+  --border: #e2d7c7;
+  --text-h: #2a231b;
+  --text: #7a6a56;
+  --track-bg: #ebe2d5;
+  --accent: #9c5a1f;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(156, 90, 31, 0.12);
+  --danger: #b4352c;
+  --danger-soft: rgba(180, 53, 44, 0.1);
+  --placeholder: #a2927e;
+
+  color-scheme: light;
+}
+
+:root[data-theme='rose'] {
+  /* 樱粉（柔和粉调） */
+  --bg: #fbf4f5;
+  --surface: #ffffff;
+  --surface-2: #f6e9ec;
+  --border: #ecd8dd;
+  --text-h: #3a2530;
+  --text: #806a72;
+  --track-bg: #f0dfe4;
+  --accent: #c04a72;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(192, 74, 114, 0.12);
+  --danger: #b4352c;
+  --danger-soft: rgba(180, 53, 44, 0.1);
+  --placeholder: #a88d97;
+
+  color-scheme: light;
+}
+
+:root {
+  /* 刘海屏 / 手势条安全区（不支持时回退 0，不影响原有布局） */
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-h);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* 页面本身不滚动：顶栏与底部导航固定，只有内容区滚动 */
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* 撑满视口，让 .app 的 height:100% 有可解析的高度 */
+#root {
+  height: 100%;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
