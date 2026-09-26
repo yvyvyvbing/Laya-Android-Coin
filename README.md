@@ -1,13 +1,7 @@
 # Coin · 离线端侧决策助手
 
 把 [Laya](https://github.com/NandhaKishorM/laya)（System 1 决策模型）装进 Android 手机：**全程离线、不联网、不申请网络权限**。
-输入一段文字 + 若干候选选项，模型在**单次前向传播**内直接给出决策结论与各选项概率——不做文本生成，因此没有幻觉，也不需要解析模型输出。
 
-> Coin: an offline on-device decision assistant for Android.
-> Laya (typed decisions) → ONNX int8 → onnxruntime-web (WASM) → React + Vite → Capacitor → APK.
-
-> [!IMPORTANT]
-> **本仓库只包含应用代码，不含模型权重**（单个文件最大 296 MB，超过 GitHub 100 MB 单文件上限）：
 > 克隆后请按 [第 5 步](#5-准备-laya-模型本仓库不包含模型权重) 自备权重。
 > 第三方组件的许可与署名义务见 **[CREDITS.md](CREDITS.md)**（含翻译模型 CC-BY-4.0 的署名要求）。
 
